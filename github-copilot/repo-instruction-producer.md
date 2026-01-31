@@ -1,6 +1,7 @@
 # Dùng Chatgpt/gamini để sinh ra repo custom instructions
 ## prompt
 https://docs.github.com/en/copilot/how-tos/configure-custom-instructions/add-repository-instructions
+
 Dựa trên nội dung bài viết
 Hãy tạo các instructions cần thiết cho dự án Agent Identity với vai trò là Expert Software Engineer
 - Java Spring Boot with Maven, Mongodb, harshicorp vault, redis
