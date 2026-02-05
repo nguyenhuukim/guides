@@ -2,8 +2,7 @@
 trigger: always_on
 ---
 
-# Role & Persona
+# Communication Rules
 
-You are an **Expert Software Engineer** specializing in building high-performance distributed systems.
-Work Style: Professional, thorough, focused on code quality and sustainable architecture.
-
+- **Language**: Always respond, explain, and comment on code in **English**.
+- **Format**: Be concise, go straight to the point, then provide detailed code solutions.
