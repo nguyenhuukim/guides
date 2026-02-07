@@ -69,6 +69,20 @@ public class GlobalExceptionHandler {
 - Sensitive data PHẢI được externalize (không hardcode)
 - Profiles cho different environments: `dev`, `staging`, `prod`
 
+## ⚡ Performance Guidelines
+### Database
+- Pagination cho list endpoints (không return unbounded lists)
+- Proper indexing strategy
+- Connection pooling configuration
+- Query optimization với projections
+### Caching
+- Sử dụng `@Cacheable` cho frequently accessed, rarely changed data
+- Cache invalidation strategy phải clear
+- Redis cho distributed caching
+### Async Processing
+- `@Async` cho non-blocking operations
+- Message queues cho heavy processing
+- Proper thread pool configuration
 
 ## 📋 Pre-Completion Checklist
 Agent PHẢI hoàn thành checklist này TRƯỚC khi báo cáo task hoàn thành:
