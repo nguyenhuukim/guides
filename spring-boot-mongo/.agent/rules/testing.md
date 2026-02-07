@@ -8,4 +8,4 @@ trigger: always_on
 
 - **Minimum Coverage:** 80% for the service layer
 - **Scenarios:** Test both happy paths and error scenarios
-- **Naming Convention:** `methodName_scenario_expectedResult`
+
