@@ -1,4 +1,15 @@
+# 🛡️ Spring Boot Standards
 
+### Dependency Injection
+- ✅ **USE** constructor injection with `@RequiredArgsConstructor`
+- ❌ **DO NOT** use `@Autowired` on fields
+- ❌ **DO NOT** use setter injection
+
+## REST API Design
+- Use @Valid for request body validation.
+- Return proper HTTP status codes
+
+---
 # 🎯 Code Quality Standards
 
 ## Naming Conventions
