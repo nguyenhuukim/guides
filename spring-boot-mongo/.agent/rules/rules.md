@@ -71,6 +71,7 @@ public record CreateUserRequest(
 ---
 
 # ⚡ Performance Guidelines
+Always consider Performance and Scalability factors
 
 ## Database
 - **Pagination for list endpoints** (avoid returning unbounded lists)
