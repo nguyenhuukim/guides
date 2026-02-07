@@ -1,6 +1,6 @@
 # 🛡️ Spring Boot Standards
 
-### Dependency Injection
+## Dependency Injection
 - ✅ **USE** constructor injection with `@RequiredArgsConstructor`
 - ❌ **DO NOT** use `@Autowired` on fields
 - ❌ **DO NOT** use setter injection
@@ -8,14 +8,18 @@
 ## REST API Design
 - Use @Valid for request body validation.
 - Return proper HTTP status codes
+
 ## Exception Handling
 - Create custom exceptions that inherit from `RuntimeException`
 - Implement `@RestControllerAdvice` for global exception handling
 - DO NOT catch generic `Exception` unless absolutely necessary.
 - Log exceptions with the proper level
+
 ## Configuration
 - Sensitive data MUST be externalized (do not hardcode).
+
 ---
+
 # 🎯 Code Quality Standards
 
 ## Naming Conventions
@@ -37,6 +41,7 @@
 ---
 
 # 🧪 Testing Requirements
+
 ## Unit Tests
 - **Minimum Coverage:** 80% for the service layer
 - **Scenarios:** Test both happy paths and error scenarios
@@ -62,6 +67,7 @@ public record CreateUserRequest(
     @NotBlank @Size(min = 2, max = 50) String name
 ) {}
 ```
+
 ---
 
 # ⚡ Performance Guidelines
@@ -99,7 +105,7 @@ The Agent **MUST** complete this checklist **BEFORE** reporting the task as fini
 
 ---
 
-## 🚫 Critical Violations (Do NOT Do)
+# 🚫 Critical Violations (Do NOT Do)
 
 * **Field injection** (using `@Autowired` on fields)
 * **Empty catch blocks**
