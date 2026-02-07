@@ -115,3 +115,4 @@ The Agent **MUST** complete this checklist **BEFORE** reporting the task as fini
 * **Raw MongoDB queries in Controllers**
 * **Skipping input validation**
 * **Generic `catch (Exception e)`**
+* Arbitrarily reformat, beautify, or reorder content in existing source code files.
