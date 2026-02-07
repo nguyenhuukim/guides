@@ -1,0 +1,14 @@
+
+implement component agent ID management
+the component has API CURD operations for agent IDs
+- API create: create a new agent ID
+  + Input: agent details (name, allowed return urls)
+  + Output: newly created agent ID
+  + Flow:
+    - Validate input details, name must be unique, allowed return urls must be valid URLs
+    - Generate a unique agent ID
+    - Store agent details and ID in the database
+    - Return the newly created agent ID
+- API read: retrieve an existing agent ID
+- API update: update an existing agent ID
+- API delete: delete an existing agent ID
