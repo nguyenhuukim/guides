@@ -13,15 +13,13 @@ The Agent **MUST** complete this checklist **BEFORE** reporting the task as fini
 
 ---
 
-# 🚫 Critical Violations (Do NOT Do)
+## 🚫 Critical Violations (Do NOT Do)
 
-| Violation | Why it's Dangerous |
-| :--- | :--- |
-| **`@Autowired` on fields** | Causes tight coupling; makes unit testing difficult. |
-| **Empty catch blocks** | Swallows errors and hides critical bugs. |
-| **`System.out.println`** | Lacks log levels and cannot be traced in production. |
-| **Hardcoded credentials** | Leads to severe security breaches. |
-| **Returning `null`** | Frequent cause of `NullPointerExceptions`. |
-| **Raw MongoDB queries in Controller** | Bypasses business logic and violates separation of concerns. |
-| **Skipping input validation** | Opens the door for Injection attacks. |
-| **Generic `catch (Exception e)`** | Masks specific errors and makes debugging impossible. |
+* **Field injection** (using `@Autowired` on fields)
+* **Empty catch blocks**
+* **`System.out.println`**
+* **Hardcoded credentials/secrets**
+* **Returning `null`**
+* **Raw MongoDB queries in Controllers**
+* **Skipping input validation**
+* **Generic `catch (Exception e)`**
