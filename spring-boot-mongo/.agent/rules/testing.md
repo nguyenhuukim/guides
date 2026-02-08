@@ -10,3 +10,4 @@ trigger: always_on
 - **Scenarios:** Test both happy paths and error scenarios
 - **Naming Convention:** template `[Method]_[When]_[Should]`
 
+
